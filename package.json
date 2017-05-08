@@ -1,0 +1,25 @@
+{
+  "name": "kodilla-zad-dodatkowe-3",
+  "version": "1.0.0",
+  "description": "Dodatkowe zadanie z kursu kodilla. Tworzenie strony na podstawie szablonu w PSD - cięcie.",
+  "main": "index.js",
+  "scripts": {
+    "test": "zadanie"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kattiegrab/zadanie-dodatkowe-nr-3-kodilla.git"
+  },
+  "keywords": [
+    "kodilla"
+  ],
+  "author": "Kasia Grabowska",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kattiegrab/zadanie-dodatkowe-nr-3-kodilla/issues"
+  },
+  "homepage": "https://github.com/kattiegrab/zadanie-dodatkowe-nr-3-kodilla#readme",
+  "devDependencies": {
+    "grunt": "^1.0.1"
+  }
+}
