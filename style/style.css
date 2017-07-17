@@ -1,25 +1,33 @@
-@import url('https://fonts.googleapis.com/css?family=Amaranth:400,400i,700,700i');
+@import url('https://fonts.googleapis.com/css?family=Ubuntu:300,300i,400,400i,500,500i,700,700i&subset=cyrillic,cyrillic-ext,greek,greek-ext,latin-ext');
 
 body {
-	font-family: 'Amaranth', sans-serif;
 	margin: 0 auto;
 }
-
+/*.hideme
+{
+    opacity:0;
+}*/
 /* .............. Main navigation and welcome header .............. */
 .main-header {
 	color: white;
+	font-family: 'Ubuntu', sans-serif;
 }
 .jumbotron {
 	background: url("../jpeg/jumbotron.png") 0/cover no-repeat;
 	height: 100vh;
 	overflow: hidden;
 	margin-bottom: 0 !important;
+	position: relative;
+	text-align: center;
 }
-.navbar {
-	width: 100%;
-	margin: 0 auto;	
+.logo {
+	position: absolute;
+	margin-top: 40px;
+	margin-left: auto;
+	margin-right: auto;
+	left: 0;
+	right: 0;
 }
-
 ul.nav a:hover { 
 	color: #D47A55 !important; 
 }
@@ -30,16 +38,21 @@ ul.nav li a:hover {
 	font-size: 16px;
 	font-weight: 700;
 	color: white;
+	margin-right: 50px;
 }
 .link {
+
 	padding-top: 40px;
 	text-align: center;
 }
 .welcome-header {
-	margin-top: 300px;
-	margin-bottom: 100px;
+	position: absolute;
+    left: 0;
+    top: 50%;
+    width: 100%;
+    text-align: center;
 }
-.welcome-header .btn-primary {
+.welcome-header .btn-primary, .start .btn-primary, .design .button, .download .button {
 	margin-top: 20px;
 	background-color: #16a085;
 	font-size: 14px;
@@ -50,32 +63,276 @@ ul.nav li a:hover {
 	text-align: center;
 	border: none;
 	padding: 0;
+	transition-property: background-color;
+	transition-timing-function: ease-in-out;
+	transition-duration: .5s;
+}
+.welcome-header .btn-primary:hover, .start .btn-primary:hover, .design .button:hover, .download .button:hover {
+	background-color: #1abc9c;
+}
+
+.icons {
+	position: absolute;
+	bottom: 10px;
+	width: 60%;
+	text-align: center;
 }
 
 .icons i.fa {
-	margin-top: 150px;
-	font-size: 20px;
-	line-height: 20px;
-	padding-left: 5px;
+	font-size: 25px;
+	line-height: 25px;
+	padding-left: 10px;
+	margin-bottom: 10px;
+	transition-timing-function: ease-in-out;
+	transition-property: color;
+	transition-duration: .5s;
+}
+.icons i:hover.fa {
+	cursor: pointer;
+	color: #16A085;
 }
 /*...................... Get started section ................... */
 .img-hand {
-	background: url("../jpeg/hand.png") 0/cover no-repeat;
-	position: absolute;
+	position: relative;
+	height: 400px;
+	margin-top: 80px;
 }
 .start {
 	background-color: #f5f6f7;
 }
-
+.start h3 {
+	margin-top: 100px;
+	margin-bottom: 50px;
+	color: #16a085;
+	font-size: 18px;
+	font-weight: 700;
+	text-transform: uppercase;
+}
+.start p {
+	color: #373737;
+	font-size: 12px;
+	line-height: 24px;
+	font-weight: 300;
+}
+.start .btn {
+	margin-bottom: 80px;
+	margin-top: 40px;
+}
 /* ..................... Design section .................. */
+.design {
 
+}
+.design img {
+	margin-top: 150px;
+}
+.design h3 {
+	color: #16a085;
+	font-size: 18px;
+	font-weight: 700;
+	line-height: 22px;
+	margin-top: 150px;
+}
+.design p {
+	width: 428px;
+	font-size: 12px;
+	line-height: 22px;
+	font-weight: 300;
+	margin-top: 40px;
+}
+.design .button {
+	margin-bottom: 40px;
+}
+.pager > li > a {
+	border: none !important;
+	color: black;
+	font-weight: 700;
+	font-size: 20px;
+	padding: 0;
+}
+.pager .next > a {
+	float: left !important;
+}
 /*.................. Our community section .........................*/
-
+.community {
+	background-color: #f5f6f7;
+}
+.community .camera-img {
+	margin-top: 150px;
+}
+.community h3 {
+	margin-top: 25px;
+	margin-bottom: 25px;
+}
+.community p {
+	margin: 0 auto;
+	margin-bottom: 150px;
+	max-width: 139px;
+	font-size: 10px;
+	font-weight: 500;
+}
+/* ................ Slider ............. */
+.gallery-container {
+	margin-top: 100px;
+}
+.gallery-slider {
+	width: 371px;
+	height: 244px;
+	overflow: hidden;
+}
+.gallery-slider .slides {
+	display: inline-block;
+	width: 732px;
+	height:  244px;
+	margin: 0;
+	padding: 0;
+}
+.gallery-slider .slides .slide {
+	float: left;
+	list-style-type: none;
+	height: 244px;
+	width: 371px;
+}
+.slide_1 {
+	background: url("../jpeg/engine.png");
+}
+.slide_2 {
+	background: url("../jpeg/leaves.png");
+}
+.slide_3 {
+	background: url("https://images.pexels.com/photos/235732/pexels-photo-235732.jpeg?w=1260&h=750&auto=compress&cs=tinysrgb" class="gallery-img");
+}
+.slide_4 {
+	background: url("https://images.pexels.com/photos/205888/pexels-photo-205888.jpeg?w=1260&h=750&auto=compress&cs=tinysrgb");
+}
+.slide_5 {
+	background: url("https://images.pexels.com/photos/260607/pexels-photo-260607.jpeg?w=1260&h=750&auto=compress&cs=tinysrgb");
+}
+.slide_6 {
+	background: url("https://images.pexels.com/photos/53486/pine-needles-forest-green-53486.jpeg?w=1260&h=750&auto=compress&cs=tinysrgb");
+}
 /* ................ Subscribe section ................... */
 .subscribe-jumbotron {
 	background: url("../jpeg/jumbotron-2.png") 0/cover no-repeat;
 	height: 100vh;
+    text-align: center;
+    display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.subscribe-jumbotron h2 {
+	color: white;
+	margin-bottom: 35px;
+}
+.subscribe input {
+	width: 280px;
+	height: 60px;
+	border-radius: 3px 0 0 3px;
+	background-color: #ffffff;
+	text-align: center;
+	font-size: 16px;
+	border: none;
+	font-weight: 500;
+	text-transform: uppercase;
+	margin-left: 50px;
+}
+.submit-button {
+	height: 60px;
+	font-size: 35px;
+	border: none;
+	border-radius: 0 3px 3px 0;
+	background-color: #16a085;
+	color: white;
 }
 /* .................. Download section ..................... */
-
+.download {
+	text-align: center;
+	background-color: #f5f6f7;
+}
+.download h2 {
+	margin-top: 90px;
+	color: #373737;
+	font-size: 20px;
+	font-weight: 700;
+}
+.download p {
+	margin: 0 auto;
+	margin-top: 15px;
+	max-width: 750px;
+	font-size: 12px;
+	font-weight: 500;
+	line-height: 22px;
+}
+.download .button {
+	margin-top: 50px;
+	position: relative;
+	width: 240px;
+	height: 56px;
+	background-color: #1abc9c;
+	font-size: 16px;
+	font-weight: 700;
+}
+.download-buttons i {
+	margin-top: 50px;
+	position: absolute;
+	width: 56px;
+	height: 56px;
+	border-radius: 0 3px 3px 0;
+	background-color: #16a085;
+	font-size: 21px;
+	padding: 17px;
+	color: white;
+	right: -22px;
+}
+.download-buttons {
+	display: flex;
+	justify-content: center;
+	margin-bottom: 100px;
+}
+.left-button {
+	margin-right: 35px;
+	position: relative;
+}
+.right-button {
+	position: relative;
+}
 /* ................. Footer ................... */
+footer h5 {
+	display: inline-block;
+	margin-top: 40px;
+	margin-bottom: 10px;
+	font-size: 14px;
+	font-weight: 700;
+	text-transform: uppercase;
+	color: #373737;
+	margin-right: 8px;
+}
+footer p {
+	margin-bottom: 30px;
+	color: #373737;
+	font-size: 14px;
+	font-weight: 500;
+	padding: 0 !important;
+}
+footer .privacy {
+	border-left: 2px solid #16a085;
+	border-right: 2px solid #16a085;
+	margin-left: 10px;
+	padding-left: 10px;
+	margin-right: 10px;
+	padding-right: 10px;
+	line-height: 15px;
+}
+footer .green-camera {
+	margin-top: 40px;
+}
+@media (max-width: 930px) {
+	.nav {
+		padding-top: 100px;
+	}
+	.nav > li > a {
+		margin-right: 0;
+	}
+	.link {
+		padding-top: 10px;
+	}
+}

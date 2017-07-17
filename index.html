@@ -13,21 +13,21 @@
 </head>
 <body>
 	<section class="main-header">
-		<div class="jumbotron">
+		<div class="jumbotron hideme">
 <!-- ..................... Main navigation .................. -->
 			<div class="container text-center">
 				<div class="navbar">
-		    		<ul class="nav navbar-nav text-uppercase">
-		    			<li class="link"><a href="#features">home</a></li>
-		    			<li class="link"><a href="#works">photoapp</a></li>
-		    			<li class="link"><a href="#team">design</a></li>
-		    			<li><a href=""><img src="jpeg/camera.png"></a></li>
-		    			<li class="link"><a href="#download">download</a></li>
+					<img class="logo" src="jpeg/camera.png">
+		    		<ul class="nav navbar-nav text-uppercase container">
+		    			<li class="link col-sm-3 col-xs-12"><a href="#features">home</a></li>
+		    			<li class="link col-sm-3 col-xs-12"><a href="#works">photoapp</a></li>
+		    			<li class="link col-sm-3 col-xs-12"><a href="#team">design</a></li>
+		    			<li class="link col-sm-3 col-xs-12"><a href="#download">download</a></li>
 		    		</ul>
 		    	</div>
 				
 <!-- ................... Welcome Header .......................... -->
-		  		<div class="welcome-header">
+		  		<div class="welcome-header hideme">
 			  		<div class="container text-center">	
 			  			<h1 class="text-uppercase text-center">Your life, a photo</h1>
 			  			<p class="text-center">print your life in a simple photo</p>
@@ -47,11 +47,17 @@
 	<section class="start">
 		<div class="container">
 			<div class="row">
-				<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-					
+				<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 hideme">
+					<h3>Rappresent your life with a simple photo</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+						sed do eiusmod tempor incididunt ut labore et dolore 
+						magna aliqua. Ut enim ad minim veniam, quis 
+						nostrud exercitation ullamco laboris nisi 
+						ut aliquip ex ea commodo consequat.</p>
+						<a href="#" class="btn btn-lg btn-primary button text-uppercase">get started</a>
 				</div>
-				<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-					<div class="img-hand"></div>
+				<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 hideme">
+					<img src="jpeg/hand2.png" alt="mobile" class="img-hand img-responsive">
 				</div>	
 			</div>
 		</div>
@@ -60,37 +66,90 @@
 	<section class="design">
 		<div class="container">
 			<div class="row">
-				<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-					<div class="img-phone"></div>
+				<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 hideme">
+					<img src="jpeg/iphone.png" alt="iphone" class="img-responsive">
 				</div>
-				<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+				<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 hideme">
 					
+
+					<h3>DESIGN</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+					<button class="btn btn-primary button">LEARN MORE</button>
+
+					<h3>DEVELOPMENT</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+					<button class="btn btn-primary button">LEARN MORE</button>
+
+					<h3>PRODUCT MANAGEMENT</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+					<button class="btn btn-primary button">LEARN MORE</button>
+
+					<nav class="mypager" aria-label="...">
+						<ul class="pager">
+					  		<li class="previous"><a href="#"><
+							</a></li>
+					    	<li class="next"><a href="#">></a></li>
+						</ul>
+					</nav>
 				</div>	
 			</div>
 		</div>
 	</section>
 <!--.................. Our community section .........................-->
-
+	<section class="community">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 text-center hideme">
+					<img class="camera-img" src="jpeg/green-camera.png">
+					<h3 class="text-uppercase">our community</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,</p>
+				</div>
+				<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 hideme gallery-container">
+					<div class="gallery-slider">
+						<ul class="slides">
+							<li class="slide slide_1"></li>
+							<li class="slide slide_2"></li>
+							<li class="slide slide_3"></li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 hideme gallery-container">
+					<div class="gallery-slider">
+						<ul class="slides">
+							<li class="slide slide_4"></li>
+							<li class="slide slide_5"></li>
+							<li class="slide slide_6"></li>
+						</ul>
+					</div>
+				</div>		
+			</div>
+		</div>
+	</section>
 <!-- ................ Subscribe section ................... -->
-	<section class="subscribe">
+	<section class="subscribe hideme">
 		<div class="jumbotron subscribe-jumbotron">
-			
+			<h2 class="text-center text-uppercase ">subscribe to us community</h2>
+			<input type="email" name="email" placeholder="Your e-mail">
+			<button class="submit-button" type="submit"><i class="fa fa-check" aria-hidden="true"></i></button>
 		</div>
 	</section>
 <!-- .................. Download section ..................... -->
-	<section class="download">
+	<section class="download hideme">
 		<div class="container">
 			<div class="row">
 				<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
 					<h2 class="text-uppercase">download it</h2>
 					<p class="text-uppercase">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-					<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
-						<a class="btn btn-primary btn-lg button text-uppercase" href="#" role="button">apple store</a>
-						<i class="fa fa-apple"></i>
-					</div>
-					<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
-						<a class="btn btn-primary btn-lg button text-uppercase" href="#" role="button">play store</a>
-						<i class="fa fa-android"></i>
+					<div class="download-buttons">
+						<div class="left-button">
+							<a class="btn btn-primary btn-lg button text-uppercase" href="#" role="button">
+							apple store</a>
+							<i class="fa fa-apple"></i>
+						</div>
+						<div class="right-button">
+							<a class="btn btn-primary btn-lg button text-uppercase" href="#" role="button">play store</a>
+							<i class="fa fa-android"></i>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -98,16 +157,16 @@
 	</section>
 <!-- ................. Footer ................... -->
 	<footer>
-		<div class="container">
+		<div class="container hideme">
 			<div class="row">
-				<div class="col-lg-11 col-md-11 col-sm-11 col-xs-11">
+				<div class="col-sm-10 ">
 					<h5 class="text text-uppercase">credits</h5>
-					<h5 class="text text-uppercase">privacy</h5>
+					<h5 class="text text-uppercase privacy">privacy</h5>
 					<h5 class="text text-uppercase">our teams</h5>
-					<p>Copyright by phototime - all rights reserved</p>
+					<p class="col-sm-10 copyright">Copyright by phototime - all rights reserved</p>
 				</div>
-				<div class="camera col-lg-1 col-md-1 col-sm-1 col-xs-1">
-					<div class="green-camera"></div>
+				<div class="camera col-sm-2 green-camera">
+					<img src="jpeg/green-camera.png" alt="camera">
 				</div>
 			</div>
 		</div>
